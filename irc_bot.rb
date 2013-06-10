@@ -1,11 +1,11 @@
 require "socket"
 
-server = "chat.freenode.net"
+server = "chat.freenode.net"	#define server to connect
 port = "6667"
-@nick = "CopyCat"
-@channel = "#bitmaker"
-@prefix = "PRIVMSG #{@channel} :"
-# greeting = ["hello", "hi", "hola", "yo"]
+@nick = "CopyCat" #define NICKNAME HERE
+@channel = "#bitmaker" #define Channel to connect
+@prefix = "PRIVMSG #{@channel} :" #msg channel chat
+
 
 # opens a new socket with the correct port and server
 @irc_server = TCPSocket.open(server, port)
